@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <form method="post" role="form" className="php-email-form mt-4">
+      <div  className="php-email-form mt-4">
         <div className="row">
           <div className="col-md-6 form-group">
             <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
@@ -71,7 +71,7 @@ const Contact = () => {
           <div className="sent-message">Your message has been sent. Thank you!</div>
         </div>
         <div className="text-center"><button type="submit">Send Message</button></div>
-      </form>
+      </div>
 
     </div>
   </section>
