@@ -38,7 +38,7 @@ const Members = () => {
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
           <div className="portfolio-wrap">
             <img src="img/Sandesh.jpeg" className="img-fluid" alt="" />
             <div className="portfolio-info">
