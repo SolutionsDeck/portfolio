@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { membersData } from '../agency_data'
 
 const Members = () => {
+  const [members, setMembers] = useState(membersData)
   return (
     <section id="portfolio" className="portfolio">
     <div className="container">
@@ -22,37 +24,24 @@ const Members = () => {
       </div>
 
       <div className="row portfolio-container">
+      {members && members.map((member) => (
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+<div className={member.type === "filter-web" ?"col-lg-4 col-md-6 portfolio-item filter-web" :"col-lg-4 col-md-6 portfolio-item filter-app"}>
           <div className="portfolio-wrap">
-            <img src="img/AK.jpeg" className="img-fluid" alt="" />
+            <img src={member.img} className="img-fluid" alt={member.name} />
             <div className="portfolio-info">
-              <h4>Amogh Ak</h4>
-              <p>Member</p>
-              <p>MERN Stack Developer</p>
+              <h4>{member.name}</h4>
+              <p> {member.designation} </p>
               <div className="portfolio-links">
-                <a href="img/Ak.jpeg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
+                <a href={member.img} data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
+      ))}
 
-        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div className="portfolio-wrap">
-            <img src="img/Sandesh.jpeg" className="img-fluid" alt="" />
-            <div className="portfolio-info">
-              <h4>Sandhesh Vanwadi</h4>
-              <p>MERN Stack Developer</p>
-              <div className="portfolio-links">
-                <a href="img/Sandesh.jpeg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" className="portfolio-details-lightbox" title="Portfolio Details"><i className="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
+             
 
       </div>
 
