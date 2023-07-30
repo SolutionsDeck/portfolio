@@ -26,7 +26,7 @@ const Members = () => {
       <div className="row portfolio-container">
       {members && members.map((member) => (
 
-<div className={member.type === "filter-web" ?"col-lg-4 col-md-6 portfolio-item filter-web" :"col-lg-4 col-md-6 portfolio-item filter-app"}>
+        <div className={member.type === "filter-web" ?"col-lg-4 col-md-6 portfolio-item filter-web" :"col-lg-4 col-md-6 portfolio-item filter-app"}>
           <div className="portfolio-wrap">
             <img src={member.img} className="img-fluid" alt={member.name} />
             <div className="portfolio-info">
@@ -40,8 +40,6 @@ const Members = () => {
           </div>
         </div>
       ))}
-
-             
 
       </div>
 

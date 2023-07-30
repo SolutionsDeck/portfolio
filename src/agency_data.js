@@ -32,7 +32,7 @@ const membersData = [
         name: "Sandesh Vanwadi",
         designation: "MERN Stack Developer",
         img: "img/Sandesh.jpeg",
-        type: "filter-web"
+        type: "filter-app"
     }
 ]
 
@@ -67,12 +67,113 @@ const servicesData = [
         icon: "bx bx-world",
         description: "Ensure smooth performance and availability with top-notch hosting and deployment solutions."
     },
-
+    {
+      title: "Custom Logical Utilities",
+      icon: "bx bx-world",
+      description: "Harnessing the Power of Custom Logic: Simplifying Workflows with Smart and Scalable Utility Solutions in Python, JavaScript, and More"
+    }
 ]
+
+const aboutData = {
+  title: "Empowering Connections in the Digital Realm",
+  shortDesc: "We provide top-notch web development and design services, delivering innovative solutions for your online success.",
+  started: "December 2022",
+  website: "https://solutionsdeck.netlify.app/",
+  phone: "+917019828816, +91 95273 15508",
+  country: "India",
+  age: "---",
+  experience: "5+",
+  email: "solutionsdeckagency@gmail.com",
+  freelance: "Open to Hire",
+  briefDesc: "We are a passionate team of tech-savvy experts dedicated to crafting exceptional websites and digital solutions. With a keen eye for design and cutting-edge technologies, we create user-friendly experiences that drive results. From custom web development to responsive design, we cater to businesses of all sizes, helping them thrive in the digital landscape. Let's build your online success story together!",
+  countsData : [
+    {
+      name: "Years of Combined Experience",
+      count: "5",
+      icon: "bi bi-journal-richtext"
+    },
+    {
+      name: "Projects",
+      count: "10",
+      icon: "bi bi-journal-richtext"
+    },
+    {
+      name: "Cups Of Coffee",
+      count: "239",
+      icon: "bx bx-coffee-togo"
+    },
+    {
+      name: "Lines of Code",
+      count: "10000",
+      icon: "bi bi-emoji-smile"
+    },
+  ],
+  skillsData: [
+    {
+      name: "HTML",
+      value: "100",
+    },
+    {
+      name:"CSS",
+      value: "98"
+    },
+    {
+      name:"JavaScript",
+      value: "90"
+    },
+    {
+      name:"Python",
+      value: "80"
+    },
+    {
+      name: "Django Framework",
+      value: "70"
+    },
+    {
+      name:"ReactJS",
+      value: "100"
+    },
+    {
+      name:"ExpressJS",
+      value: "100"
+    },
+    {
+      name:"MongoDB",
+      value: "100"
+    },
+    {
+      name:"NodeJS",
+      value: "100"
+    },
+    {
+      name: "AWS",
+      value: "70"
+    },
+  ],
+  QAs: [
+    {
+      title: "What we can do",
+      desc: "We offer a full range of web development services, including website design, programming, and optimization, tailored to meet your unique business needs.",
+    },
+    {
+      title: "Mission And Vision",
+      desc: "Mission is to Empowering success through exceptional web solutions.And Vision to creating a digital future of limitless possibilities through innovative uptrend technologies.",
+    },
+    {
+      title: "Open for Freelancers",
+      desc: "Absolutely! We are open to collaborating with skilled and talented freelancers who can contribute to our projects and bring fresh perspectives to the table.",
+    },
+    {
+      title: "Expertise and Specialisation",
+      desc: "Dynamic web apps, captivating mobile experiences, seamless API integrations, and e-commerce solutions. With a focus on user experience, security, and performance optimization, we empower success.",
+    }
+  ]
+}
 
 export {
   greeting,
   socialMediaLinks,
   membersData,
-  servicesData
+  servicesData,
+  aboutData
 };
