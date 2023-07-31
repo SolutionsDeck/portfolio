@@ -170,10 +170,261 @@ const aboutData = {
   ]
 }
 
+const packagesData = [
+  {
+    title: "Basic",
+    type: "non-featured",
+    features: [
+      {
+        name: "funtionalWebsite",
+        visible: false,
+      }, 
+      {
+        name: "contentUpload",
+        visible: false,
+      },
+      {
+        name: "eCommerceFunctionality", 
+        visible: false,
+      },
+      {
+        name: "paymentProcessing", visible: false,
+      },
+      {
+        name: "optInForm", visible: true,
+      },
+      {
+        name: "autoResponderIntegration", visible: true,
+      },
+      {
+        name: "speedOptimization", visible: false,
+      },
+      {
+        name: "hostingSetup", visible:false,
+      },
+      {
+        name: "socialMediaSignins", visible: false,
+      },
+      {
+        name: "3 pages", visible: true,
+      },
+      {
+        name: "3 products", visible: true
+      },
+      {
+        name: "1 revisions",
+        visible: true,
+      },
+      {
+        name: "designCustomization", visible: false,
+      },
+      {
+        name: "includeSourceCode", 
+        visible: false,
+      },
+      {
+        name: "detailedCodeComments",
+        visible: false,
+      },
+      {
+        name: "prototype", visible: false,
+      },
+  ],
+  deliveryTime: "5",
+  price:"8,999/-",
+  },
+  {
+    title: "Standard",
+    type: "featured",
+    features: [
+      {
+        name: "funtionalWebsite",
+        visible: true,
+      }, 
+      {
+        name: "contentUpload",
+        visible: true,
+      },
+      {
+        name: "eCommerceFunctionality", 
+        visible: false,
+      },
+      {
+        name: "paymentProcessing", visible: false,
+      },
+      {
+        name: "optInForm", visible: true,
+      },
+      {
+        name: "autoResponderIntegration", visible: true,
+      },
+      {
+        name: "speedOptimization", visible: false,
+      },
+      {
+        name: "hostingSetup", visible:false,
+      },
+      {
+        name: "socialMediaSignins(2)", visible: true,
+      },
+      {
+        name: "5 pages", visible: true,
+      },
+      {
+        name: "8 products", visible: true
+      },
+      {
+        name: "3 revisions",
+        visible: true,
+      },
+      {
+        name: "designCustomization", visible: true,
+      },
+      {
+        name: "includeSourceCode", 
+        visible: false,
+      },
+      {
+        name: "detailedCodeComments",
+        visible: false,
+      },
+      {
+        name: "prototype", visible: false,
+      },
+  ],
+  deliveryTime: "25",
+  price:"49,999/-",
+  },
+  {
+    title: "Premium",
+    type: "non-featured",
+    features: [
+      {
+        name: "funtionalWebsite",
+        visible: true,
+      }, 
+      {
+        name: "contentUpload",
+        visible: true,
+      },
+      {
+        name: "eCommerceFunctionality", 
+        visible: true,
+      },
+      {
+        name: "paymentProcessing", visible: true,
+      },
+      {
+        name: "optInForm", visible: true,
+      },
+      {
+        name: "autoResponderIntegration", visible: true,
+      },
+      {
+        name: "speedOptimization", visible: true,
+      },
+      {
+        name: "hostingSetup", visible: true,
+      },
+      {
+        name: "socialMediaSignins(2)", visible: true,
+      },
+      {
+        name: "10 pages", visible: true,
+      },
+      {
+        name: "Unlimited products", visible: true
+      },
+      {
+        name: "10 revisions",
+        visible: true,
+      },
+      {
+        name: "designCustomization", visible: true,
+      },
+      {
+        name: "includeSourceCode", 
+        visible: true,
+      },
+      {
+        name: "detailedCodeComments",
+        visible: true,
+      },
+      {
+        name: "prototype", visible: true,
+      },
+  ],
+  deliveryTime: "60",
+  price:"95,000/-",
+  },
+  {
+    title: "Premium",
+    features: [
+      {
+        name: "funtionalWebsite",
+        visible: true,
+      }, 
+      {
+        name: "contentUpload",
+        visible: true,
+      },
+      {
+        name: "eCommerceFunctionality", 
+        visible: true,
+      },
+      {
+        name: "paymentProcessing", visible: true,
+      },
+      {
+        name: "optInForm", visible: true,
+      },
+      {
+        name: "autoResponderIntegration", visible: true,
+      },
+      {
+        name: "speedOptimization", visible: true,
+      },
+      {
+        name: "hostingSetup", visible: true,
+      },
+      {
+        name: "socialMediaSignins(2)", visible: true,
+      },
+      {
+        name: "10 pages", visible: true,
+      },
+      {
+        name: "Unlimited products", visible: true
+      },
+      {
+        name: "10 revisions",
+        visible: true,
+      },
+      {
+        name: "designCustomization", visible: true,
+      },
+      {
+        name: "includeSourceCode", 
+        visible: true,
+      },
+      {
+        name: "detailedCodeComments",
+        visible: true,
+      },
+      {
+        name: "prototype", visible: true,
+      },
+  ],
+  deliveryTime: "60",
+  price:"Starting range 95,000/-",
+  }
+]
+
 export {
   greeting,
   socialMediaLinks,
   membersData,
   servicesData,
-  aboutData
+  aboutData,
+  packagesData
 };
