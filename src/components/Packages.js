@@ -15,7 +15,7 @@ const Packages = () => {
   const [packages, setPackages] = useState(packagesData)
   return (
     <section id="resume" className="resume">
-    <div className="container">
+    <div className="container cus-container">
 
     <CarouselProvider
           totalSlides={3}
