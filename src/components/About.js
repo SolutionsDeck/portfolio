@@ -16,7 +16,7 @@ const About = () => {
 
       <div className="row">
         <div className="col-lg-4" data-aos="fade-right">
-          <img src="img/me.jpg" className="img-fluid" alt="" />
+          <img src="img/logo_transparent.png" className="img-fluid" alt="" width="330" height="330" />
         </div>
         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>{about.title}</h3>

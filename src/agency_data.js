@@ -104,7 +104,7 @@ const aboutData = {
     },
     {
       name: "Lines of Code",
-      count: "10000",
+      count: "9987",
       icon: "bi bi-emoji-smile"
     },
   ],
