@@ -33,7 +33,13 @@ const membersData = [
         designation: "MERN Stack Developer",
         img: "img/Sandesh.jpeg",
         type: "filter-app"
-    }
+    },
+    // {
+    //   name: "Omkar Tikare",
+    //   designation: "Frontend Developer",
+    //   img: "img/Omkar.jpeg",
+    //   type: "filter-card"
+    // }
 ]
 
 const servicesData = [

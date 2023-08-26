@@ -816,7 +816,13 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  height: 500px;
+  height: 400px;
+}
+
+.portfolio .portfolio-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
 }
 
 .portfolio .portfolio-wrap::before {
