@@ -77,7 +77,12 @@ const servicesData = [
       title: "Custom Logical Utilities",
       icon: "bx bx-world",
       description: "Harnessing the Power of Custom Logic: Simplifying Workflows with Smart and Scalable Utility Solutions in Python, JavaScript, and More"
-    }
+    },
+    {
+      title: "Content Writing",
+      icon: "bx bxs-book-content",
+      description: "Unlock your brand's potential with our expert content writing service. We craft compelling narratives that captivate, inform, and drive results."
+    },
 ]
 
 const aboutData = {
