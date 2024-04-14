@@ -89,7 +89,6 @@
   border: 1px solid #1e1e1e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   height: max-content;
-  overflow: hidden;
 }
 
 .snip1265 .plan:hover,
@@ -126,6 +125,7 @@
   margin: 10px 0 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  word-wrap: break-word;
 }
 .snip1265 .plan-cost {
   margin: 0;
@@ -134,7 +134,7 @@
 .snip1265 .plan-price {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .snip1265 .plan-type {
   opacity: 0.8;
@@ -145,7 +145,7 @@
   text-transform: uppercase;
 }
 .snip1265 .plan-features {
-  padding: 0;
+  padding: 10px 0;
   margin: 0 0 40px;
   text-align: center;
   list-style: outside none none;
@@ -158,6 +158,8 @@
   opacity: 0.5;
   border-left: 5px solid #18d26e;
   margin: 5px 20px;
+  width: 200px;
+  word-wrap: break-word;
 }
 
 .snip1265 .featured {
@@ -166,6 +168,34 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   z-index: 1;
   height: max-content;
+}
+
+.package-header{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.info-h5{
+  cursor: pointer;
+}
+
+.info-listing ul{
+  padding: 10px 0;
+  margin: 0 0 40px;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.info-listing ul li{
+  padding: 5px 2%;
+  font-weight: 500;
+  opacity: 1;
+  border-left: 5px solid #18d26e;
+  margin: 5px 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -184,10 +214,15 @@
   .snip1265 .featured {
     margin-top: 0;
   }
+  .info-h5{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
 }
 @media only screen and (max-width: 440px) {
   .snip1265 .plan {
     width: 100%;
+    /* margin:0 auto !important; */
   }
   .cus-container{
     display: none;

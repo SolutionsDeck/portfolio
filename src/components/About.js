@@ -46,9 +46,9 @@ const About = () => {
     <div className="counts container">
 
       <div className="row">
-        { about.countsData && about.countsData.map((data) => (
+        { about.countsData && about.countsData.map((data, index) => (
 
-          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0" key={index}>
           <div className="count-box">
             <i className={data.icon}></i>
             <span data-purecounter-start="0" data-purecounter-end={data.count} data-purecounter-duration="1" className="purecounter"></span>
@@ -71,8 +71,8 @@ const About = () => {
 
         <div className="col-lg-6">
 
-          {about.skillsData && about.skillsData.slice(0,5).map((data) => (
-            <div className="progress">
+          {about.skillsData && about.skillsData.slice(0,5).map((data, index) => (
+            <div className="progress" key={index}>
             <span className="skill">{data.name}<i className="val">{data.value}%</i></span>
             <div className="progress-bar-wrap">
               <div className="progress-bar" role="progressbar" style={{width: data.value + "%"}} aria-valuenow={data.value} aria-valuemin="0" aria-valuemax="100"></div>
@@ -84,8 +84,8 @@ const About = () => {
 
         <div className="col-lg-6">
 
-          {about.skillsData && about.skillsData.slice(5,10).map((data) => (
-            <div className="progress">
+          {about.skillsData && about.skillsData.slice(5,10).map((data, index) => (
+            <div className="progress" key={index}>
             <span className="skill">{data.name}<i className="val">{data.value}%</i></span>
             <div className="progress-bar-wrap">
               <div className="progress-bar" role="progressbar" style={{width: data.value + "%"}} aria-valuenow={data.value} aria-valuemin="0" aria-valuemax="100"></div>
@@ -110,8 +110,8 @@ const About = () => {
       <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
         <div className="swiper-wrapper">
 
-            {about.QAs && about.QAs.map((data) => (
-          <div className="swiper-slide">
+            {about.QAs && about.QAs.map((data, index) => (
+          <div className="swiper-slide" key={index}>
 
               <div className="testimonial-item">
               <h3>{data.title}</h3>

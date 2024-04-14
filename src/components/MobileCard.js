@@ -1,17 +1,17 @@
 import React from 'react'
 
-const MobileCard = ({dt}) => {
+const MobileCard = ({dt, index}) => {
   return (
     <>
-    <div class={`plan ${dt.type === 'featured' ? 'featured' : ''}`}>
-    <header><i class="ion-ios-navigate-outline"></i>
+    <div className={`plan ${dt.type === 'featured' ? 'featured' : ''}`} key={index}>
+    <header><i className="ion-ios-navigate-outline"></i>
     {dt.type === 'featured' ? <div className='ribbon'>Recommended</div> : null}
-      <h4 class="plan-title">
+      <h4 className="plan-title">
         {dt.title}
       </h4>
-      <div class="plan-cost"><span class="plan-price">{dt.price}</span><span class="plan-type">{dt.title === 'Premium' ? 'Starting price' : ''}</span></div>
+      <div className="plan-cost"><span className="plan-price">{dt.price}</span><span className="plan-type">{dt.title === 'Premium' ? 'Starting price' : ''}</span></div>
     </header>
-    <ul class="plan-features">
+    <ul className="plan-features">
         {dt.features && dt.features.map((feature) => (
             feature.visible === true ? 
             <li>{feature.name}

@@ -13,8 +13,8 @@ const Services = () => {
       </div>
 
       <div className="row">
-        {agency_data && agency_data.map((data) => (
-          <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+        {agency_data && agency_data.map((data, index) => (
+          <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" key={index}>
           <div className="icon-box">
             <div className="icon"><i className={data.icon}></i></div>
             <h4><a href="#!">{data.title}</a></h4>

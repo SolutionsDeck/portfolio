@@ -13,8 +13,12 @@ import MobileCard from './MobileCard';
 
 const Packages = () => {
   const [packages, setPackages] = useState(packagesData)
+  const [infoModal, setInfoModal] = useState(false)
+
   return (
     <section id="resume" className="resume">
+      {!infoModal ? (
+        <>
     <div className="container cus-container">
 
     <CarouselProvider
@@ -23,24 +27,27 @@ const Packages = () => {
           naturalSlideHeight={32}
           infinite={true}
         >
+          <div className='package-header'>
           <h3>Packages We Provide</h3>
+          {/* <h5 className='info-h5' onClick={() => setInfoModal(true)}>Click me</h5> */}
+          </div>
           <Slider className="cus-slider-two">
             <Slide index={0} className='cus-slide'>
               <Card data={packages.slice(0,3)} />
             </Slide>
             <Slide index={1} className='cus-slide'>
-              <p>Hi, Package Slide 1</p>
+              <Card data={packages.slice(3,6)} />
             </Slide>
             <Slide index={2} className='cus-slide'>
-              <p>i, Package Slide 2</p>
+              <Card data={packages.slice(6,9)} />
             </Slide>
           </Slider>
           <div className='button-div'>
             <ButtonBack className="cus-back btn">
-              <i class='bx bxs-left-arrow'></i>
+              <i className='bx bxs-left-arrow'></i>
             </ButtonBack>
             <ButtonNext className="cus-front btn">
-              <i class='bx bxs-right-arrow'></i>
+              <i className='bx bxs-right-arrow'></i>
             </ButtonNext>
           </div>
         </CarouselProvider>
@@ -49,32 +56,53 @@ const Packages = () => {
     <div className="container-mobile">
 
     <CarouselProvider
-          totalSlides={3}
+          totalSlides={6}
           naturalSlideWidth={100}
           naturalSlideHeight={32}
           infinite={true}
         >
-          <h3>Packages We Provide</h3>
+          <div className='package-header'>
+            <h3>Packages We Provide</h3>
+            <h5 className='info-h5' onClick={() => setInfoModal(true)}>Click me</h5>
+          </div>
           <Slider className="cus-slider-two">
-            {packages.map((pack) => (
+            {packages.map((pack, index) => (
               <Slide index={0} className='cus-slide'>
-                <div className='wrapper snip1265'>
-                <MobileCard dt={pack} />
+                <div className='wrapper snip1265' key={index}>
+                <MobileCard dt={pack} index={index} />
                 </div>
             </Slide>
             ))}
           </Slider>
           <div className='button-div'>
             <ButtonBack className="cus-back btn">
-              <i class='bx bxs-left-arrow'></i>
+              <i className='bx bxs-left-arrow'></i>
             </ButtonBack>
             <ButtonNext className="cus-front btn">
-              <i class='bx bxs-right-arrow'></i>
+              <i className='bx bxs-right-arrow'></i>
             </ButtonNext>
           </div>
         </CarouselProvider>
 
     </div>
+    </>
+      ): (
+        <div className='container'>
+          <div className='info-modal'>
+
+          <div className='package-header'>
+          <h3>Titleee</h3>
+          <h5 className='info-h5' onClick={() => setInfoModal(false)}>Back</h5>
+          </div>
+          <div className='info-listing'>
+            <ul>
+              <li>Prices for all packages can be negotiated.</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      ) }
   </section>
   )
 }

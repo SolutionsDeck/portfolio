@@ -183,7 +183,7 @@ const aboutData = {
 
 const packagesData = [
   {
-    title: "Basic",
+    title: "Static WebSite",
     type: "non-featured",
     features: [
       {
@@ -242,10 +242,10 @@ const packagesData = [
       },
   ],
   deliveryTime: "5",
-  price:"8,999/-",
+  price:"Starting Range 8,999/-",
   },
   {
-    title: "Standard",
+    title: "Dynamic WebSite",
     type: "featured",
     features: [
       {
@@ -304,10 +304,11 @@ const packagesData = [
       },
   ],
   deliveryTime: "25",
-  price:"49,999/-",
+  price:"Starting Range 49,999/-",
   },
   {
-    title: "Premium",
+    title: "Compelte Web",
+    title2: "Application",
     type: "non-featured",
     features: [
       {
@@ -366,69 +367,139 @@ const packagesData = [
       },
   ],
   deliveryTime: "60",
-  price:"95,000/-",
+  price:"Starting range 95,000/-",
   },
   {
-    title: "Premium",
+    title: "Custom Logical",
+    title2: "Utilities",
+    type: "non-featured",
     features: [
       {
-        name: "funtionalWebsite",
-        visible: true,
-      }, 
-      {
-        name: "contentUpload",
-        visible: true,
+        name: "High-End logics", visible: true,
       },
       {
-        name: "eCommerceFunctionality", 
-        visible: true,
-      },
+        name: "Usage of different Utilities", visible: true,
+      }
+    ],
+    price: "Starting range 3,999/-"
+  },
+  {
+    title: "UI/UX",    
+    type: "non-featured",
+    features: [
       {
-        name: "paymentProcessing", visible: true,
-      },
-      {
-        name: "optInForm", visible: true,
-      },
-      {
-        name: "autoResponderIntegration", visible: true,
-      },
-      {
-        name: "speedOptimization", visible: true,
-      },
-      {
-        name: "hostingSetup", visible: true,
-      },
-      {
-        name: "socialMediaSignins(2)", visible: true,
-      },
-      {
-        name: "10 pages", visible: true,
-      },
-      {
-        name: "Unlimited products", visible: true
-      },
-      {
-        name: "10 revisions",
+        name: "Visual Design",
         visible: true,
       },
       {
-        name: "designCustomization", visible: true,
-      },
-      {
-        name: "includeSourceCode", 
+        name: "User-centered Approach",
         visible: true,
       },
       {
-        name: "detailedCodeComments",
+        name: "Responsiveness",
         visible: true,
       },
       {
-        name: "prototype", visible: true,
-      },
+        name: "Information Architecture",
+        visible: true,
+      }
   ],
   deliveryTime: "60",
-  price:"Starting range 95,000/-",
-  }
+  price:"Starting range 1,499 / page",
+  },
+  {
+    title: "Backend API's",
+    type: "non-featured",
+    features: [
+      {
+        name: "Scalability", visible: true,
+      },
+      {
+        name: "Security", visible: true,
+      },
+      {
+        name: "Performance Optimization", visible: true,
+      },
+      {
+        name: "Rate Limiting", visible: true,
+      },
+      {
+        name: "Webhooks", visible: true,
+      },
+      {
+        name: "Cross-Origin Resource Sharing(CORS)", visible: true,
+      },
+    ],
+    price: "Starting range 14,999/-"
+  },
+  {
+    title: "Custom Website",
+    title2: "From Scratch",
+    features: [
+      {
+        name: "Basic site", visible: true
+      },
+      {
+        name: "E-commerce Add-on", visible: true,
+      },
+      {
+        name: "Payment Integration Add-on", visible: true,
+      },
+      {
+        name: "Hosting Add-on", visible: true,
+      },
+      {
+        name: "Monthly Maintaince", visible: true,
+      },
+      {
+        name: "Various Add-on's", visible: true,
+      }
+    ]
+  },
+  {
+    title: "Hosting",
+    type: "non-featured",
+    features: [
+      {
+        name: "Deploy sites with top-tier based Platforms", visible: true,
+      },
+      {
+        name: "Monthly Site Maintaince", visible: true,
+      },
+      {
+        name: "Password-protected sites", visible: true,
+      },
+      {
+        name: "Live site previews with a collaboration UI", visible: true,
+      },
+      {
+        name: "Deploy static assets & dynamic serverless functions", visible: true,
+      }
+    ],
+    price: "Starting range 5,999/-"
+  },
+  {
+    title: "Content",
+    title2: "Writing",
+    features: [
+      {
+        name:"Understanding of business & customers", visible: true,
+      },
+      {
+        name: "Putting across the relevant content", visible: true,
+      },
+      {
+        name: "Vision and mission statement", visible: true,
+      },
+      {
+        name: "Content which captivates and attracts audience", visible: true,
+      },
+      {
+        name: "SEO covered as per the Industry standards", visible: true,
+      }
+    ],
+    price: "Starting range 3 / word"
+  },
 ]
 
 export {
