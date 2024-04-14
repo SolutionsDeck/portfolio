@@ -63,7 +63,7 @@ const Packages = () => {
         >
           <div className='package-header'>
             <h3>Packages We Provide</h3>
-            <h5 className='info-h5' onClick={() => setInfoModal(true)}>Click me</h5>
+            {/* <h5 className='info-h5' onClick={() => setInfoModal(true)}>Click me</h5> */}
           </div>
           <Slider className="cus-slider-two">
             {packages.map((pack, index) => (
